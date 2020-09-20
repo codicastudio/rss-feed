@@ -1,0 +1,52 @@
+{
+    "name": "codicastudio/rssfeed",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/rssfeed",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "mbrown@codicastudio.com",
+            "homepage": "https://codicastudio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.4",
+        "illuminate/support": "^8.0",
+        "illuminate/http": "^7.0|^8.0",
+        "illuminate/contracts": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench": "^6.0",
+        "spatie/phpunit-snapshot-assertions": "^4.2",
+        "spatie/test-time": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Feed\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\Feed\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\Feed\\FeedServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
