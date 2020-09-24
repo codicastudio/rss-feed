@@ -1,8 +1,8 @@
 {
-    "name": "codica-studio/rssfeed",
+    "name": "codicastudio/rss-feed",
     "description": "A random Codica Studio package.",
 
-    "homepage": "https://github.com/codicastudio/rssfeed",
+    "homepage": "https://github.com/codicastudio/rss-feed",
     "license": "MIT",
     "authors": [
         {
@@ -15,8 +15,8 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "illuminate/support": "^8.0",
-        "illuminate/http": "^7.0|^8.0",
-        "illuminate/contracts": "^7.0|^8.0"
+        "illuminate/http": "^8.0",
+        "illuminate/contracts": "^8.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
@@ -45,6 +45,6 @@
             ]
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
